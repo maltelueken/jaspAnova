@@ -60,7 +60,7 @@ Form
 		{
 			preferredHeight: jaspTheme.smallDefaultVariablesFormHeight
 			AvailableVariablesList { name: "components"; title: qsTr("Components"); source: ["fixedFactors", "randomFactors"] }
-			AssignedVariablesList {  name: "modelTerms"; title: qsTr("Model Terms"); listViewType: JASP.Interaction }
+			AssignedVariablesList {  name: "modelTerms"; title: qsTr("Model Terms"); listViewType: JASP.Interaction; id: modelTerms }
 		}
 		
 		DropDown
@@ -108,6 +108,11 @@ Form
 			childrenOnSameRow: true
 			CIField {	name: "confidenceIntervalIntervalContrast" }
 		}
+	}
+	
+	ANOVA.OrderRestrictions
+	{
+		type: "Anova"
 	}
 	
 	Section

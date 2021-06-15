@@ -122,6 +122,11 @@ Form
 		}
 	}
 	
+	ANOVA.OrderRestrictions
+	{
+		type: "Ancova"
+	}
+	
 	Section
 	{
 		title: qsTr("Contrasts")
